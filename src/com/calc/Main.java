@@ -18,7 +18,7 @@ public class Main {
                         data.put(i.toString(), new Object());//just creating objects to use their hashes in calculations
                     Double result = Calculator.calc(key, ts, data);
                     System.out.println(Thread.currentThread().getId() + " key: " + key + " ts: " + ts + " calculated: " + result);
-                    Thread.sleep(rand.nextInt(15) + 5);
+                    Thread.sleep(rand.nextInt(45) + 5);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
